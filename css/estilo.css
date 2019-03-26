@@ -1,0 +1,27 @@
+body{
+    margin: auto;
+    padding: auto;
+    width: 1400px;
+    height: 1000px;
+}
+
+#conteudo{
+    margin: auto;
+    padding: auto;
+    width: 1400px;
+    height: 900px;
+    border: 1px solid black;
+}
+#botoes{
+    margin: auto;
+    margin-top: 10px;   
+    padding: auto;
+    height: 50px;
+    width: 1400px;
+}
+#rodape{
+    margin: auto;
+    padding: auto;
+    width: 1400px;
+    height: 100px;
+}
