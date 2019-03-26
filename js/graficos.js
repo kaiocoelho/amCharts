@@ -169,7 +169,7 @@ function Pie() {
             break;
         case '3D':
             // Cria um instancia 3D
-            var chart = am4core.create("conteudo", am4charts.PieChart3D);
+            var chart = am4core.create("Q2", am4charts.PieChart3D);
             
             // Cria a serie pie 3D
             var series = chart.series.push(new am4charts.PieSeries3D());
@@ -205,7 +205,7 @@ function Pie() {
 
 function Radar() {
     var cursor = document.getElementById("cursoridRAD").checked;
-    var legenda = document.getElementById("legendaid").checked;
+    var legenda = document.getElementById("legendaidRAD").checked;
     var zoom = document.getElementById("zoomidRAD").checked;
 
     // Cria uma instancia
