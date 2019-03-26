@@ -19,8 +19,15 @@
                 <?php require 'modal/radar.php';?>
                 <?php require 'modal/sliced.php';?>
             </div> 
-            <div id="conteudo"> 
-
+            <div id="conteudo">
+                <div id="sup">
+                    <div id="Q1"></div>
+                    <div id="Q2"></div>
+                </div>
+                <div id="inf">
+                    <div id="Q3"></div>
+                    <div id="Q4"></div>
+                </div>
             </div>
             <div id="rodape">
 
