@@ -25,6 +25,7 @@ function XY() {
     var cursor = document.getElementById("cursoridXY").checked;
     var legenda = document.getElementById("legendaidXY").checked;
     var zoom = document.getElementById("zoomidXY").checked;
+    var cor = document.getElementById("corXY").value;
 
     // Criando uma instancia
     var chart = am4core.create("Q1", am4charts.XYChart);
@@ -85,41 +86,41 @@ function XY() {
             series.dataFields.valueY = "litres";
             series.dataFields.categoryX = "country";
             series.columns.template.tooltipText = "Series: {name}\nCategory: {categoryX}\nValue: {valueY}";
-            series.columns.template.fill = am4core.color("#bbdefb"); // fill
+            series.columns.template.fill = am4core.color(cor); // fill
             break;
         case 'Coluna 3D':
             var series = chart.series.push(new am4charts.ColumnSeries3D());
             series.dataFields.valueY = "litres";
             series.dataFields.categoryX = "country";
             series.columns.template.tooltipText = "Series: {name}\nCategory: {categoryX}\nValue: {valueY}";
-            series.columns.template.fill = am4core.color("#bbdefb"); // fill
+            series.columns.template.fill = am4core.color(cor); // fill
             break;
         case 'Cone':
             var series = chart.series.push(new am4charts.ConeSeries());
             series.dataFields.valueY = "litres";
             series.dataFields.categoryX = "country";
             series.columns.template.tooltipText = "Series: {name}\nCategory: {categoryX}\nValue: {valueY}";
-            series.columns.template.fill = am4core.color("#bbdefb"); // fill
+            series.columns.template.fill = am4core.color(cor); // fill
             break;
         case 'Coluna Curva':
             var series = chart.series.push(new am4charts.CurvedColumnSeries());
             series.dataFields.valueY = "litres";
             series.dataFields.categoryX = "country";
             series.columns.template.tooltipText = "Series: {name}\nCategory: {categoryX}\nValue: {valueY}";
-            series.columns.template.fill = am4core.color("#bbdefb"); // fill
+            series.columns.template.fill = am4core.color(cor); // fill
             break;
         case 'Linha':
             var series = chart.series.push(new am4charts.LineSeries());
             series.dataFields.valueY = "litres";
             series.dataFields.categoryX = "country";
-            series.stroke = am4core.color("#83fa12");
+            series.stroke = am4core.color(cor);
             series.strokeWidth = 3; 
             break;
         case 'Degrais':
             var series = chart.series.push(new am4charts.StepLineSeries());
             series.dataFields.valueY = "litres";
             series.dataFields.categoryX = "country";
-            series.stroke = am4core.color("#83fa12");
+            series.stroke = am4core.color(cor);
             series.strokeWidth = 3; 
             break;
         case 'OHLC':
@@ -127,7 +128,7 @@ function XY() {
             series.dataFields.valueY = "litres";
             series.dataFields.categoryX = "country";
             series.columns.template.tooltipText = "Series: {name}\nCategory: {categoryX}\nValue: {valueY}";
-            series.columns.template.fill = am4core.color("#104547"); // fill
+            series.columns.template.fill = am4core.color(cor); // fill
             break;
     }
     series.name = "Serie";
@@ -149,6 +150,7 @@ function XY() {
         chart.scrollbarX = new am4core.Scrollbar();
         chart.scrollbarY = new am4core.Scrollbar();
     }
+    
 }
 
 function Pie() {
@@ -207,6 +209,7 @@ function Radar() {
     var cursor = document.getElementById("cursoridRAD").checked;
     var legenda = document.getElementById("legendaidRAD").checked;
     var zoom = document.getElementById("zoomidRAD").checked;
+    var cor = document.getElementById("corRAD").value;
 
     // Cria uma instancia
     var chart = am4core.create("Q3", am4charts.RadarChart);
@@ -240,7 +243,7 @@ function Radar() {
             series.dataFields.categoryX = "country";
             series.name = "Units";
             series.strokeWidth = 0;
-            series.columns.template.fill = am4core.color("#CDA2AB");
+            series.columns.template.fill = am4core.color(cor);
             series.columns.template.tooltipText = "Series: {name}\nCategory: {categoryX}\nValue: {valueY}";
             break;
     }

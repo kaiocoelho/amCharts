@@ -36,6 +36,8 @@
                                             '<option>Linha</option>'.
                                             '<option>Coluna</option>'.
                                         '</select><br>'.
+                                        '<label>Cor do gráfico: </label>' . '    '.
+                                        '<input type="color" id="corRAD">'.
                                     '</form>'.
                                 '</div>'.
                             '</div>'.

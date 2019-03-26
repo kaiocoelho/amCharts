@@ -59,6 +59,8 @@
                                             '<option>Degrais</option>'.
                                             '<option>OHLC</option>'.
                                         '</select><br>'.
+                                        '<label>Cor do gráfico: </label>' . '    '.
+                                        '<input type="color" id="corXY">'.
                                     '</form>'.
                                 '</div>'.
                             '</div>'.
