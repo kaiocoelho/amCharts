@@ -17,13 +17,6 @@
                             '<div class="modal-body">'.
                                 '<div id="form_opcoes">'.
                                     '<form name="opcoes">'.
-                                        '<!--<label>Tipo de Gráfico</label>'. '  '.
-                                        '<select id="tipoid" name="tipo">'.
-                                            '<option>XY</option>'.
-                                            '<option>Torta</option>'.
-                                            '<option>Radar</option>'.
-                                            '<option>Sliced</option>'.
-                                        '</select><br>-->'.
                                         '<label>Título do Gráfico: </label>'. '   '.
                                         '<input type="text" name="titulo" id="tituloidXY"><br>'.
                                         '<label>Habilitar Cursor: </label>'. '  '.
