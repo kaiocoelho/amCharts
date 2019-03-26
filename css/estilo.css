@@ -4,12 +4,43 @@ body{
     width: 1400px;
     height: 1000px;
 }
-
 #conteudo{
     margin: auto;
     padding: auto;
     width: 1400px;
     height: 900px;
+    border: 1px solid black;
+}
+#sup{
+    width: 100%;
+    height: 50%;
+}
+#inf{
+    width: 100%;
+    height: 50%;
+}
+#Q1{
+    float: left;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+#Q2{
+    float: right;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+#Q3{
+    float: left;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+#Q4{
+    float: right;
+    width: 50%;
+    height: 100%;
     border: 1px solid black;
 }
 #botoes{
