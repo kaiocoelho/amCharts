@@ -18,46 +18,23 @@
                                 '<div id="form_opcoes">'.
                                     '<form name="opcoes">'.
                                         '<label>Título do Gráfico: </label>'. '   '.
-                                        '<input type="text" name="titulo" id="tituloid"><br>'.
+                                        '<input type="text" name="titulo" id="tituloidRAD"><br>'.
                                         '<label>Habilitar Cursor: </label>'. '  '.
-                                        '<input type="radio" id="cursorid" name="cursor"/>sim'. '  '.
-                                        '<input type="radio" id="cursorid" name="cursor"/>não'.
+                                        '<input type="radio" id="cursoridRAD" name="cursor"/>sim'. '  '.
+                                        '<input type="radio" id="cursoridRAD" name="cursor"/>não'.
                                         '<br>'.
                                         '<label>Habilitar Zoom: </label>'. '  '.
-                                        '<input type="radio" id="zoomid" name="zoom"/>sim'. '  '.
-                                        '<input type="radio" id="zoomid" name="zoom"/>não'.
+                                        '<input type="radio" id="zoomidRAD" name="zoom"/>sim'. '  '.
+                                        '<input type="radio" id="zoomidRAD" name="zoom"/>não'.
                                         '<br>'.
                                         '<label>Habilitar Legenda: </label>'. '  '.
-                                        '<input type="radio" id="legendaid" name="legenda"/>sim'. '  '.
-                                        '<input type="radio" id="legendaid" name="legenda"/>não'.
+                                        '<input type="radio" id="legendaidRAD" name="legenda"/>sim'. '  '.
+                                        '<input type="radio" id="legendaidRAD" name="legenda"/>não'.
                                         '<br>'.
-                                        '<label>Tipo do Eixo X</label>'. '  '.
-                                        '<select id="tipoEixoXid" name="tipoEixoX">'.
-                                            '<option>Categoria</option>'.
-                                            '<option>Data</option>'.
-                                            '<option>Duração</option>'.
-                                            '<option>Valor</option>'.
-                                        '</select><br>'.
-                                        '<label>Label Eixo X: '. '  '.
-                                        '<input type="text" name="nomeEixoX" id="nomeEixoXid"><br>'.
-                                        '<label>Tipo do Eixo Y</label>'. '  '.
-                                        '<select id="tipoEixoYid" name="tipoEixoY">'.
-                                            '<option>Categoria</option>'.
-                                            '<option>Data</option>'.
-                                            '<option>Duração</option>'.
-                                            '<option>Valor</option>'.
-                                        '</select><br>'.
-                                        '<label>Label Eixo Y: '. '  '.
-                                        '<input type="text" name="nomeEixoY" id="nomeEixoYid"><br>'.
                                         '<label>Tipo do Gráfico</label>'. '  '.
-                                        '<select id="tipoGrafico" name="tipoGrafico">'.
-                                            '<option>Coluna</option>'.
-                                            '<option>Coluna 3D</option>'.
-                                            '<option>Cone</option>'.
-                                            '<option>Coluna Curva</option>'.
+                                        '<select id="tipoGraficoRAD" name="tipoGrafico">'.
                                             '<option>Linha</option>'.
-                                            '<option>Degrais</option>'.
-                                            '<option>OHLC</option>'.
+                                            '<option>Coluna</option>'.
                                         '</select><br>'.
                                     '</form>'.
                                 '</div>'.

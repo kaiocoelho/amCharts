@@ -204,37 +204,53 @@ function XY() {
 }
 
 function Radar() {
-    var cursor = document.getElementById("cursorid").checked;
+    var cursor = document.getElementById("cursoridRAD").checked;
     var legenda = document.getElementById("legendaid").checked;
-    var zoom = document.getElementById("zoomid").checked;
+    var zoom = document.getElementById("zoomidRAD").checked;
 
-    /* Create chart instance */
+    // Cria uma instancia
     var chart = am4core.create("conteudo", am4charts.RadarChart);
 
-    /* Add data */
+    // Adiciona dados
     chart.dataSource.url = "json/data_radar.json";
-
+    
     /* Create axes */
     var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
     categoryAxis.dataFields.category = "country";
 
     var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    valueAxis.dataFields.category = "litres";
 
-    /* Create and configure series */
-    var series = chart.series.push(new am4charts.RadarSeries());
-    series.dataFields.valueY = "litres";
-    series.dataFields.categoryX = "country";
-    series.name = "Sales";
-    series.strokeWidth = 3;
-    series.zIndex = 2;
 
-    var series2 = chart.series.push(new am4charts.RadarColumnSeries());
-    series2.dataFields.valueY = "units";
-    series2.dataFields.categoryX = "country";
-    series2.name = "Units";
-    series2.strokeWidth = 0;
-    series2.columns.template.fill = am4core.color("#CDA2AB");
-    series2.columns.template.tooltipText = "Series: {name}\nCategory: {categoryX}\nValue: {valueY}";
+    var tipoGrafico = document.getElementById("tipoGraficoRAD").value;
+    
+    // Cria e configura  série de acordo com o tipo selecionado pelo usário
+    switch(tipoGrafico){
+        case 'Linha':
+            var series = chart.series.push(new am4charts.RadarSeries());
+            series.dataFields.valueY = "litres";
+            series.dataFields.categoryX = "country";
+            series.name = "Sales";
+            series.strokeWidth = 3;
+            series.zIndex = 2;
+            break;
+        case 'Coluna':
+            var series = chart.series.push(new am4charts.RadarColumnSeries());
+            series.dataFields.valueY = "litres";
+            series.dataFields.categoryX = "country";
+            series.name = "Units";
+            series.strokeWidth = 0;
+            series.columns.template.fill = am4core.color("#CDA2AB");
+            series.columns.template.tooltipText = "Series: {name}\nCategory: {categoryX}\nValue: {valueY}";
+            break;
+    }
+    
+    // Inserindo título no grafico
+    var title = chart.titles.create();
+    var titulo = document.getElementById("tituloidRAD").value;
+    title.text = titulo;
+    title.fontSize = 25;
+    title.marginBottom = 30;
 
     if (cursor === true) {
         chart.cursor = new am4charts.RadarCursor();
