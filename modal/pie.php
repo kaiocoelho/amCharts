@@ -34,11 +34,6 @@
                                         '</select><br>'.
                                         '<label>Valor do raio interno (%): </label>'. '   '.
                                         '<input type="numeric" name="raio" id="raioidPIE">'.
-                                        '<!--<input type="button" value="Gerar Gráfico" onclick="Gerar();">'.
-                                        '<input type="button" value="Gráfico XY" onClick="XY();">'.
-                                        '<input type="button" value="Gráfico Pie" onClick="Pie();">'.
-                                        '<input type="button" value="Gráfico Radar" onClick="Radar();">'.
-                                        '<input type="button" value="Gráfico Sliced" onClick="Sliced();">-->'.
                                     '</form>'.
                                 '</div>'.
                             '</div>'.
